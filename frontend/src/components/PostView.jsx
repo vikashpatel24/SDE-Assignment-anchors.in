@@ -31,7 +31,7 @@ const PostView = () => {
     const fetchPost = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/posts/${postId}`
+          `https://backend-anchors-in.vercel.app/api/posts/${postId}`
         );
         setPost(response.data);
       } catch (error) {
@@ -54,7 +54,7 @@ const PostView = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://localhost:3000/api/posts/${postId}/comments`,
+        `https://backend-anchors-in.vercel.app/api/posts/${postId}/comments`,
         {
           userId: currentUser,
           text: newComment,
@@ -72,7 +72,7 @@ const PostView = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `http://localhost:3000/api/posts/${postId}/comments/${commentId}/replies`,
+        `https://backend-anchors-in.vercel.app/api/posts/${postId}/comments/${commentId}/replies`,
         {
           userId: currentUser,
           text: replyInputs[commentId],

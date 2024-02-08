@@ -60,7 +60,7 @@ const CreatePost = () => {
       const { title, description } = postData;
       try {
         const response = await axios.post(
-          "http://localhost:3000/api/posts/create",
+          "https://backend-anchors-in.vercel.app/api/posts/create",
           {
             userId: currentUser,
             title,

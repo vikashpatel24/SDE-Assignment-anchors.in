@@ -14,7 +14,7 @@ const Reset = () => {
     console.log(email);
 
     axios
-      .post("http://localhost:3000/reset-otp", { email })
+      .post("https://backend-anchors-in.vercel.app/reset-otp", { email })
       .then((response) => {
         console.log(response);
         localStorage.setItem("access_token", response.data.token);

@@ -62,7 +62,7 @@ const SignUp = () => {
     if (handleValidation()) {
       const { name, email, password } = values;
       const { data } = await axios.post(
-        "http://localhost:3000/api/auth/register",
+        "https://backend-anchors-in.vercel.app/api/auth/register",
         {
           name,
           email,

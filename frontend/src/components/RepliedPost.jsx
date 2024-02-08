@@ -27,7 +27,7 @@ const RepliedPost = () => {
     const fetchCommentedPosts = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/posts/replied-posts/${currentUser}`
+          `https://backend-anchors-in.vercel.app/posts/replied-posts/${currentUser}`
         );
         setRepliedPosts(response.data);
         console.log(response.data);

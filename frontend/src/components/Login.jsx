@@ -47,7 +47,7 @@ const Login = () => {
       const { email, password } = values;
       console.log(values);
       const { data } = await axios.post(
-        "http://localhost:3000/api/auth/login",
+        "https://backend-anchors-in.vercel.app/api/auth/login",
         {
           email,
           password,

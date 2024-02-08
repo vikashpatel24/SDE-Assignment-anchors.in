@@ -11,7 +11,7 @@ const AllPosts = () => {
     const fetchPosts = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/posts/getAllPosts"
+          "https://backend-anchors-in.vercel.app/api/posts/getAllPosts"
         );
         setPosts(response.data);
         console.log(response.data);
